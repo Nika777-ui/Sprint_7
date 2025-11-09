@@ -35,3 +35,8 @@ class ScooterApiClient:
         """Получение списка заказов"""
         response = requests.get(f"{self.base_url}/orders")
         return response
+    
+    def delete_courier(self, courier_id):
+        """Удаление курьера по ID"""
+        response = requests.delete(f"{self.base_url}/courier/{courier_id}")
+        return response
