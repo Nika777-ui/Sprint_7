@@ -13,13 +13,18 @@ Avtomatizirovannyye testy dlya API servisa "Yandeks.Samokat" s ispol'zovaniyem P
 ## Struktura proekta
 Sprint_7/
 ├── tests/
-│ ├── test_courier.py # Testy dlya kur'yerov (sozdaniye, login)
-│ └── test_orders.py # Testy dlya zakazov (sozdaniye, spisok)
+│ ├── test_create_courier.py # Тесты создания курьера
+│ ├── test_login_courier.py # Тесты логина курьера
+│ ├── test_orders.py # Тесты заказов
+│ └── conftest.py # Фикстуры Pytest
 ├── helpers/
-│ ├── api_client.py # Klient dlya raboty s API
-│ └── courier_generator.py # Generator testovykh dannykh
-├── requirements.txt # Zavisimosti proekta
-└── README.md # Dokumentatsiya
+│ ├── api_client.py # Клиент для работы с API
+│ └── courier_generator.py # Генератор тестовых данных
+├── data/
+│ ├── urls.py # URL эндпоинтов API
+│ └── test_data.py # Тестовые данные
+├── requirements.txt # Зависимости проекта
+└── README.md # Документация
 
 ## Testovoye pokrytiye
 - Sozdaniye kur'yera
